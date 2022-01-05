@@ -1,5 +1,6 @@
 buildscript {
 	repositories {
+		mavenLocal()
 		maven {
 			name 'Quilt Repository'
 			url 'https://maven.quiltmc.org/repository/release/'
@@ -44,6 +45,7 @@ static def buildTime() {
 }
 
 repositories {
+	mavenLocal()
 	mavenCentral()
 	maven {
 		name 'Quilt Repository'
